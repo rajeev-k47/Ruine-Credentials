@@ -49,6 +49,9 @@ app.get('/callback', async (req, res) => {
         res.status(400).send('No code provided');
     }
 });
+app.get('/uptime',(req,res)=>{
+  res.json({"name":"timed!"})
+})
 
 app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`);
