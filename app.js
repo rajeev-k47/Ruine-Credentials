@@ -13,9 +13,7 @@ app.get('/.well-known/assetlinks.json', (req, res) => {
   }
 }]
 
-    res.setHeader('Content-Disposition', 'attachment; filename="assetlinks.json');
-    res.setHeader('Content-Type', 'application/json');
-    res.status(200).send(JSON.stringify(jsonData, null, 2)); 
+    res.json(jsonData);
 });
 
 app.listen(port, () => {
