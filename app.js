@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const axios = require('axios');
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const CLIENT_ID = '448403106695-qmmbjaj8f5ns5r3kg45asne0cg3g0ngt.apps.googleusercontent.com';
 const CLIENT_SECRET = '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';
